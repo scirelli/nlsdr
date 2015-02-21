@@ -115,6 +115,12 @@ body{
 .bold{
     font-weight:bold;
 }
+.center{
+    text-align:center;
+}
+.italic{
+    font-style:italic;
+}
 #stars{
     background-color:black;
     /*
@@ -256,7 +262,14 @@ section.section8{
     background-image:url("../img/8.jpg");
 }
 
-
+.donate{
+    font-style:italic; 
+    background-color:rgba(0,0,0,0.50); 
+    text-align:center;
+}
+.darken{
+    background-color:rgba(0,0,0,0.50); 
+}
 
 
 
