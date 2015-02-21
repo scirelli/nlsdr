@@ -32,6 +32,6 @@
         }
     }
 
-    createStarField();
-    createAurora();
+    //createStarField();
+    //createAurora();
 }();
