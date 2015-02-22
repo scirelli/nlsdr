@@ -107,20 +107,9 @@ body{
     margin:0;
     background-color:black;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow-x:hidden;
 }
 
-.caps{
-    text-transform:uppercase;
-}
-.bold{
-    font-weight:bold;
-}
-.center{
-    text-align:center;
-}
-.italic{
-    font-style:italic;
-}
 #stars{
     background-color:black;
     /*
@@ -165,50 +154,21 @@ body{
     background: linear-gradient(rgb(0,255,0),black); /* Standard syntax */
 }
 
-section.content{
-    height:100vh;
-    min-height:100vh;
-    max-height:100vh;
-
-    width:100%;
-    min-width:100%;
-    max-width:100%;
-    padding:0;
-
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color:white;
-}
-section .overlay{
-    height:100vh;
-    min-height:100vh;
-    max-height:100vh;
-
-    width:100%;
-    min-width:100%;
-    max-width:100%;
-
-    padding:0;
-    margin:0;
-
-    background-color:rgba(0,0,0,0.35);
-    color:white;
-}
-
 .title{
     margin-top:0;
 }
 
-section.section1{
-    background-image:url("../img/1.jpg");
+.caps{
+    text-transform:uppercase;
 }
-
-section.content .container header{
+.bold{
+    font-weight:bold;
+}
+.center{
     text-align:center;
 }
-
-section.content .container header.others{
-    margin-top:50px;
+.italic{
+    font-style:italic;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -217,51 +177,98 @@ h1,h2,h3,h4,h5,h6{
     -webkit-font-smoothing:antialiased;
     letter-spacing:1px;
 }
-section.content .container header h2{
-    font-size:32px;
-    font-weight:800;
-}
 
-section.content .container{
+.container{
     font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:16px;
     line-height:1.4em;
     -webkit-font-smoothing:antialiased;
     letter-spacing:1px;
     text-align:left;
+    color:white;
 }
 
-section.section2{
+.content{
+    margin:0;
+    padding:0;
+}
+
+.content header{
+    text-align:center;
+}
+
+.content header.others{
+    margin-top:50px;
+}
+
+.content header h2{
+    font-size:32px;
+    font-weight:800;
+}
+
+section > .row{
+    margin:0;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.backdrop{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color:white;
+
+    height:100vh;
+    width:100vw;
+}
+.overlay{
+    padding:0;
+    margin:0;
+
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    background-color:rgba(0,0,0,0.35);
+    color:white;
+}
+
+.backdrop1{
+    background-image:url("../img/1.jpg");
+}
+
+.backdrop2{
     background-image:url("../img/3.jpg");
 }
-section.section2 .overlay{
+.backdrop2 .overlay{
     background-color:rgba(0,0,0,0.20);
 }
 
-section.section3{
+.backdrop3{
     background-image:url("../img/2.jpg");
 }
-section.section3 .overlay{
+.backdrop3 .overlay{
     background-color:rgba(0,0,0,0.60);
 }
 
-section.section4{
+.backdrop4{
     background-image:url("../img/4.jpg");
 }
 
-section.section5{
+.backdrop5{
     background-image:url("../img/5.jpg");
 }
-section.section6{
+.backdrop6{
     background-image:url("../img/6.jpg");
 }
-section.section7{
+.backdrop7{
     background-image:url("../img/7.jpg");
 }
-section.section8{
+.backdrop8{
     background-image:url("../img/9.jpg");
 }
-section.section9{
+.backdrop9{
+    background-image:url("../img/10.jpg");
+}
+.backdrop10{
     background-image:url("../img/8.jpg");
 }
 
