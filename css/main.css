@@ -170,7 +170,6 @@ body{
 .italic{
     font-style:italic;
 }
-
 h1,h2,h3,h4,h5,h6{
     font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height:1.4em;
@@ -191,6 +190,7 @@ h1,h2,h3,h4,h5,h6{
 .content{
     margin:0;
     padding:0;
+    width:100%;
 }
 
 .content header{
@@ -210,23 +210,23 @@ section > .row{
     margin:0;
     padding-left:20px;
     padding-right:20px;
+    min-height:768px
 }
 
 .backdrop{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color:white;
-
-    height:100vh;
-    width:100vw;
 }
 .overlay{
+    /*
     padding:0;
     margin:0;
 
     position:absolute;
     height:100vh;
     width:100vw;
+    */
     background-color:rgba(0,0,0,0.35);
     color:white;
 }
