@@ -218,9 +218,9 @@ section > .row{
     background-repeat: no-repeat;
     color:white;
 }
-@media (max-width: 800px) {
+@media screen and (max-device-width: 799px) {
     .backdrop{
-        background-size: 100% 100%;
+        background-size: 100%;
         background-repeat: repeat-y;
     }
 }
