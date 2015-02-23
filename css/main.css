@@ -210,7 +210,7 @@ section > .row{
     margin:0;
     padding-left:20px;
     padding-right:20px;
-    min-height:768px
+    min-height:100vh;
 }
 
 .backdrop{
