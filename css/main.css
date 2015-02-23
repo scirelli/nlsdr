@@ -218,7 +218,7 @@ section > .row{
     background-repeat: no-repeat;
     color:white;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .backdrop{
         background-size: 100% 100%;
         background-repeat: repeat-y;
