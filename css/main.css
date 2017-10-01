@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -11,15 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #DDD;
-    background-color:black;
+    color: #222;
     font-size: 1em;
     line-height: 1.4;
-    /*background-image:url("../img/bk_1_128x128.png");
-    background-size: 128px 128px;
-    background-repeat: repeat;*/
-    height:100%;
-    width:100%;
 }
 
 /*
@@ -100,54 +94,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body{
-    padding:0;
-    margin:0;
-}
 
-#stars{
-    background-color:black;
-    /*
-    background-image:url("../img/bk_1_128x128.png");
-    background-size: 128px 128px;
-    background-repeat: repeat;
-    */
-    height:100vh;
-    width:100vw;
-    position:fixed;
-    top:0px;
-    left:0px;
-}
 
-.star{
-    background-color:white;
-    height:1px;
-    width:1px;
-    position:absolute;
-    top:0px;
-    left:0px;
-}
 
-#aurora{
-    background-color:rgb(0,0,0);
-    background-color:rgba(0,0,0,0);
-    height:100vh;
-    width:100vw;
-    position:fixed;
-    top:0px;
-    left:0px;
-}
 
-.aurora-ray{
-    width:1px;
-    position:absolute;
-    top:0px;
-    left:0px;
-    background: -webkit-linear-gradient(rgb(0,255,0),black); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(0,255,0),black); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(0,255,0),black); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(0,255,0),black); /* Standard syntax */
-}
+
 
 
 
@@ -165,13 +116,11 @@ body{
    ========================================================================== */
 
 /*
- * Hide visually and from screen readers:
- * http://juicystudio.com/article/screen-readers-display-none.php
+ * Hide visually and from screen readers
  */
 
 .hidden {
     display: none !important;
-    visibility: hidden;
 }
 
 /*
@@ -247,8 +196,8 @@ body{
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
@@ -262,7 +211,9 @@ body{
 @media print {
     *,
     *:before,
-    *:after {
+    *:after,
+    *:first-letter,
+    *:first-line {
         background: transparent !important;
         color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
