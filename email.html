@@ -116,17 +116,17 @@
                 padding: 0;
             }
             
+            em {
+                font-style: none;
+            }
+
             em.underline {
                 text-decoration: underline;
-                font-style: none;
             }
             em.bold {
                 font-weight: bold;
-                font-style: none;
             }
-            em.bold-caps {
-                font-weight: bold;
-                font-style: none;
+            em.uppercase {
                 text-transform: uppercase;
             }
             em.blue {
@@ -134,11 +134,14 @@
             }
 
             article {
-
+                column-count:2;
+                column-gap: 40px;
+                column-rule: 1px solid black;
             }
 
             article em {
                 font-weight: bold;
+                font-style: none;
             }
             article h1{
                 text-transform: capitalize;
@@ -152,9 +155,6 @@
             }
             .article-1{
                 margin-top: 4px;
-                column-count:2;
-                column-gap: 40px;
-                column-rule: 1px solid black;
             }
 
             .article-1 img.article-1-img-1 {
@@ -164,15 +164,74 @@
                 width:30%;
                 height:30%;
             }
+            
+            .article-1 div.img-series-container {
+                text-align: center;
+            }
+
+            .article-1 img.series-img {
+                width: 100%;
+                height: 100%;
+                border: none;
+                margin: 4px 10px 0 0;
+            }
 
             .article-1 figure {
                 display:inline-block;
-                max-width: 90px;
-                min-height: 90px;
-                margin: 10px;
+                max-width: 150px;
+                min-height: 150px;
+                margin: 0 5px 0 5px;
+                vertical-align: top;
             }
             .article-1 figcaption {
                 font-size: 0.7em;
+            }
+            
+            .article-1 .plea {
+                display: block;
+
+                color: red;
+                font-weight: bold;
+                font-size: 1.2em;
+
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .article-1 .tax-deductible {
+                display: block;
+                text-align: center;
+                font-size: 0.9em;
+            }
+ 
+            .article-1 table.how-to-donate{
+                border: 3px solid black;
+                border-collapse: collapse;
+            }
+
+            .article-1 table.how-to-donate th, .article-1 table.how-to-donate td {
+                border: 2px solid black;
+                padding: 4px;
+            }
+
+            .article-1 table.how-to-donate th{
+                background-color: yellow;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 1.2em;
+            }
+
+            .article-1 table.how-to-donate td{
+                font-size: 1.1em;
+            }
+
+            .article-1 table.how-to-donate td a{
+                color: blue;
+                font-weight: bold;
+            }
+ 
+            .article-1 table.how-to-donate td em{
+                font-weight: bold;
             }
 
             @media screen and (max-width: 1024px) {
@@ -221,7 +280,7 @@
                         <div class="cell">
                             <div class="header-pic-1">
                                 <span>
-                                    <img src="img/header_pic_1.png" alt="Header image"></img>
+                                    <img src="img/header_pic_1.jpeg" alt="Header image"></img>
                                 </span>
                             </div>
                         </div>
@@ -236,7 +295,7 @@
                 <article class="article-1">
                     <h1>The Clock is Running Out for the Dogs of Northern Lights</h1>
                     <p>
-                        <img src="img/article1-img-1.png" alt="Dog 1" class="article-1-img-1"></img>
+                        <img src="img/article-1-img-1.jpeg" alt="Dog 1" class="article-1-img-1"></img>
                         It's been another long year since we've had to reach out to you for help on behalf of our "team", the homeless dogs of Northern Lights Sled Dog Rescue. We've given our best effort to the dogs since long before this tough season began,
                          carefully managing our limited resources without sacrificing the care the dogs need. We’ve searched out donations of high quality food for the "training table".  We've acquired a new network of "team doctors" who provide the best possible care (while offering very generous discounts and "freebies") to get and <em class="underline">keep</em> our dogs as healthy and strong as possible. We've got a bigger and better group of dedicated volunteer "coaches" than ever before! The majority of our dogs don't have foster families due to the sheer number we take in, and these committed volunteers make regular enrichment visits to the many dogs in paid boarding at the kennel. They are doing amazing work turning broken spirits into winning spirits!  <em>In short, we've worked our hardest to make sure each dog is ready on the day of his or her "Big Game"</em> - the day someone like you chooses your own MVP and leads him or her off the field of rescue and into a new life.  
                     </p>
@@ -245,29 +304,55 @@
                         <em>But our effort has been nothing compared to that of these incredible dogs. They are our inspiration.</em> Each has faced unique struggles and challenges before being "drafted" for the team. Once onboard, they work tirelessly to show us their own special strengths (and needs) so that we can place them in the best possible position come that allimportant "Game Day" - the day they meet adopters. Many dogs have to put their heart and soul into keeping a positive mental attitude after being passed over again and again. We know their day will come, and we know that YOU believe in them, too! <em>Together, we can continue to help every dog eventually win his or her very own "Forever Team".</em>
                     </p>
 
-                    <div>
+                    <div class="img-series-container">
                         <figure>
-                            <img src="" alt="Image 1">
+                            <img src="img/article-1-img-2.jpeg" alt="Image 1" class="article-1-img-2 series-img">
                             <figcaption>Tackled! Possible Penalty on the Play.</figcaption>
                         </figure>
 
                         <figure>
-                            <img src="" alt="Image 2">
+                            <img src="img/article-1-img-3.jpeg" alt="Image 2" class="article-1-img-3 series-img">
                             <figcaption>One, two, three, Omaha, HUT!</figcaption>
                         </figure>
 
                         <figure>
-                            <img src="" alt="Image 3">
+                            <img src="img/article-1-img-4.jpeg" alt="Image 3" class="article-1-img-4 series-img">
                             <figcaption>Interception! Running for the TD!</figcaption>
                         </figure>
                     </div>
 
                     <p>
-                        <em class="bold">But even with all this, it's been a very tough season. Everything hinges on this game, and the clock is running down</em>. We're still standing and have the will to win, but we've been beleaguered by a truly daunting "offense" - and our ability to play on is compromised. We've been sacked repeatedly and we're bruised and bleeding from high medical bills, having suffered an unusually-large number of dogs on the "injured reserve" list. We've also moved a number of dogs into "retirement", where we will meet our commitment to support them for the rest of their lives. Despite a very successful adoptions year so far, we've been moved farther and farther from the goal line by the never-ending stream of dogs in need-which means higher boarding AND medical costs. And finally, we've been blitzed by a decline in donations since last holiday season. Since we operate 100% on contributions from people like you-our adopters and friends-we're starting to get scared. <em class="bold">We desperately need the support of that "Twelfth Man"</em><em class="bold-caps"> - you! the dogs have the will and the heart and the hope to stay in the game</em>. But we are writing today because all we have left is this “Hail Mary” pass. <em class="bold-caps blue">these sweet, hopeful boys & girls need your help!</em>
+                        <em class="bold">But even with all this, it's been a very tough season. Everything hinges on this game, and the clock is running down</em>. We're still standing and have the will to win, but we've been beleaguered by a truly daunting "offense" - and our ability to play on is compromised. We've been sacked repeatedly and we're bruised and bleeding from high medical bills, having suffered an unusually-large number of dogs on the "injured reserve" list. We've also moved a number of dogs into "retirement", where we will meet our commitment to support them for the rest of their lives. Despite a very successful adoptions year so far, we've been moved farther and farther from the goal line by the never-ending stream of dogs in need-which means higher boarding AND medical costs. And finally, we've been blitzed by a decline in donations since last holiday season. Since we operate 100% on contributions from people like you-our adopters and friends-we're starting to get scared. <em class="bold">We desperately need the support of that "Twelfth Man"</em><em class="bold uppercase"> - you! the dogs have the will and the heart and the hope to stay in the game</em>. But we are writing today because all we have left is this “Hail Mary” pass. <em class="bold uppercase blue">these sweet, hopeful boys &amp; girls need your help!</em>
                     </p>
+
+                    <p>
+                        <span class="plea">Will you catch their "hail mary" pass before it's too late? Won't you please give as generously as you can today?</span>
+                        <span class="tax-deductible">Your Donation is Tax Deductible</span>
+                    </p>
+
+                    <table class="how-to-donate">
+                        <tbody>
+                            <tr>
+                                <th>Donate Instantly Online</th>
+                                <td>Via <em>PayPal</em> at <a href="https://www.paypal.com">www.paypal.com</a> payable to <a href="mailto:SaveASledDog@aol.com">SaveASledDog@aol.com</a></td>
+                            </tr>
+                            <tr>
+                                <th>Or Donate by Check</th>
+                                <td>
+                                    <address>
+                                        NLSDR<br/>
+                                        PO Box 7281<br/>
+                                        Greenwood, IN 46142
+                                    </address>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </article>
 
-                <article></article>
+                <article class="article-2">
+                    <h1><em class="bold uppercase">OUR CURRENT ROSTER</em> (Boys in Boarding &amp; Boys in Foster - Waiting for Forever Homes)</h1>
+                </article>
 
                 <article></article>
 
