@@ -133,10 +133,20 @@
                 color: blue;
             }
 
-            article {
+            main.article-container{
                 column-count:2;
+                -webkit-column-count: 2; /* Chrome, Safari, Opera */
+                -moz-column-count: 2; /* Firefox */
+
                 column-gap: 40px;
+                -webkit-column-gap: 40px;
+                -moz-column-gap: 40px;
+
                 column-rule: 1px solid black;
+                -webkit-column-rule: 1px solid black;
+                -moz-column-rule: 1px solid black;
+
+                margin: 4px 0 0 0;
             }
 
             article em {
@@ -234,6 +244,33 @@
                 font-weight: bold;
             }
 
+            .article-2{
+            }
+
+            .article-2 h1{
+                background-color: #5900b3;
+            }
+
+            .article-2 .img-grid-container {
+            }
+
+            .article-2 .img-grid-container figure{
+                display:inline-block;
+                max-width: 120px;
+                min-height: 120px;
+                margin: 0 5px 0 5px;
+                vertical-align: top;
+            }
+            .article-2 .img-grid-container figure img{
+                width: 100%;
+                height: 100%;
+                border: none;
+                margin: 4px 10px 0 0;
+            }
+            .article-2 .img-grid-container figure figcaption{
+                font-size: 0.7em;
+            }
+
             @media screen and (max-width: 1024px) {
                 .logo {
                     text-align:center;
@@ -265,37 +302,37 @@
         </section>
 
         <section>
-            <main>
-                <header>
-                    <div class="row">
-                        <div class="cell">
-                            <div class="logo-container">
-                                <span class="logo">
-                                    <img src="img/logo_large.png" alt="Logo"></img>
-                                </span>
-                                <h3 class="volume">Volume IX, Issue 1 - <time>October, 2017</time></h3>
-                                <h2 class="announce">See the Team on Page Two</h2>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="header-pic-1">
-                                <span>
-                                    <img src="img/header_pic_1.jpeg" alt="Header image"></img>
-                                </span>
-                            </div>
+            <header>
+                <div class="row">
+                    <div class="cell">
+                        <div class="logo-container">
+                            <span class="logo">
+                                <img src="img/logo_large.png" alt="Logo"/>
+                            </span>
+                            <h3 class="volume">Volume IX, Issue 1 - <time>October, 2017</time></h3>
+                            <h2 class="announce">See the Team on Page Two</h2>
                         </div>
                     </div>
-                    <div class="row-fill">
-                        <div class="cell">
-                            <h1 class="help-request">Can You Keep us in the Game?</h1>
+                    <div class="cell">
+                        <div class="header-pic-1">
+                            <span>
+                                <img src="img/header_pic_1.jpeg" alt="Header image"/>
+                            </span>
                         </div>
                     </div>
-                </header>
+                </div>
+                <div class="row-fill">
+                    <div class="cell">
+                        <h1 class="help-request">Can You Keep us in the Game?</h1>
+                    </div>
+                </div>
+            </header>
 
+            <main class="article-container">
                 <article class="article-1">
                     <h1>The Clock is Running Out for the Dogs of Northern Lights</h1>
                     <p>
-                        <img src="img/article-1-img-1.jpeg" alt="Dog 1" class="article-1-img-1"></img>
+                        <img src="img/article-1-img-1.jpeg" alt="Dog 1" class="article-1-img-1"/>
                         It's been another long year since we've had to reach out to you for help on behalf of our "team", the homeless dogs of Northern Lights Sled Dog Rescue. We've given our best effort to the dogs since long before this tough season began,
                          carefully managing our limited resources without sacrificing the care the dogs need. We’ve searched out donations of high quality food for the "training table".  We've acquired a new network of "team doctors" who provide the best possible care (while offering very generous discounts and "freebies") to get and <em class="underline">keep</em> our dogs as healthy and strong as possible. We've got a bigger and better group of dedicated volunteer "coaches" than ever before! The majority of our dogs don't have foster families due to the sheer number we take in, and these committed volunteers make regular enrichment visits to the many dogs in paid boarding at the kennel. They are doing amazing work turning broken spirits into winning spirits!  <em>In short, we've worked our hardest to make sure each dog is ready on the day of his or her "Big Game"</em> - the day someone like you chooses your own MVP and leads him or her off the field of rescue and into a new life.  
                     </p>
@@ -306,17 +343,17 @@
 
                     <div class="img-series-container">
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Image 1" class="article-1-img-2 series-img">
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 1" class="article-1-img-2 series-img"/>
                             <figcaption>Tackled! Possible Penalty on the Play.</figcaption>
                         </figure>
 
                         <figure>
-                            <img src="img/article-1-img-3.jpeg" alt="Image 2" class="article-1-img-3 series-img">
+                            <img src="img/article-1-img-3.jpeg" alt="Image 2" class="article-1-img-3 series-img"/>
                             <figcaption>One, two, three, Omaha, HUT!</figcaption>
                         </figure>
 
                         <figure>
-                            <img src="img/article-1-img-4.jpeg" alt="Image 3" class="article-1-img-4 series-img">
+                            <img src="img/article-1-img-4.jpeg" alt="Image 3" class="article-1-img-4 series-img"/>
                             <figcaption>Interception! Running for the TD!</figcaption>
                         </figure>
                     </div>
@@ -352,6 +389,97 @@
 
                 <article class="article-2">
                     <h1><em class="bold uppercase">OUR CURRENT ROSTER</em> (Boys in Boarding &amp; Boys in Foster - Waiting for Forever Homes)</h1>
+                    <div class="img-grid-container">
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 1" class="img-grid"/>
+
+                            <figcaption>
+                                Stannis (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 2" class="img-grid"/>
+
+                            <figcaption>
+                                Penguin (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 3" class="img-grid"/>
+
+                            <figcaption>
+                                Drake (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 4" class="img-grid"/>
+
+                            <figcaption>
+                                Bentley (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 5" class="img-grid"/>
+
+                            <figcaption>
+                                Rufus (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 6" class="img-grid"/>
+
+                            <figcaption>
+                                Luke (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 7" class="img-grid"/>
+
+                            <figcaption>
+                                Everest (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 8" class="img-grid"/>
+
+                            <figcaption>
+                                Fargo (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 9" class="img-grid"/>
+
+                            <figcaption>
+                                Hickory (boarding)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 10" class="img-grid"/>
+
+                            <figcaption>
+                                Kai (foster)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 11" class="img-grid"/>
+
+                            <figcaption>
+                                Malakai (foster)
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/article-1-img-2.jpeg" alt="Dog 12" class="img-grid"/>
+
+                            <figcaption>
+                                Mashugga (foster)
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <p>
+                        <span>Please Help Us!</span>
+                        Let them speak to your heart … See all of these terrific dogs and either hear or read how they beat the odds and got their second chance at happiness at <a href="http://northernlights.petfinder.com">northernlights.petfinder.com </a>
+                    </p>
                 </article>
 
                 <article></article>
