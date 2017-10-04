@@ -14,7 +14,8 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
 
         <!--<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">-->
-        <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Chewy|Gochi+Hand" rel="stylesheet">
 
         <style>
             body {
@@ -95,7 +96,7 @@
 
                 /*font-family: 'Just Another Hand', cursive;*/
                 font-family: 'Chewy', cursive;
-                font-size: 2.1em;
+                font-size: 3.0em;
                 font-weight: normal;
                 color: red;
                 letter-spacing: 0.1em;
@@ -107,17 +108,17 @@
                 text-align:center;
                 text-transform: uppercase;
 
-                font-size: 2.5em;
+                font-size: 3.5em;
                 color: black;
-                font-weight: bold;
+                font-weight: 800;
                 border: 3px solid black;
 
                 margin: 3px 0 0 0;
-                padding: 0;
+                padding: 5px 0 5px 0;
             }
             
             em {
-                font-style: none;
+                font-style: normal;
             }
 
             em.underline {
@@ -132,7 +133,7 @@
             em.blue {
                 color: blue;
             }
-
+            
             main.article-container{
                 column-count:2;
                 -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -146,25 +147,32 @@
                 -webkit-column-rule: 1px solid black;
                 -moz-column-rule: 1px solid black;
 
-                margin: 4px 0 0 0;
+                margin: 14px 0 0 0;
             }
 
             article em {
                 font-weight: bold;
-                font-style: none;
             }
             article h1{
                 text-transform: capitalize;
                 color: white;
-                padding: 4px 0px 4px 8px;
+                padding: 4px 0px 6px 8px;
                 font-size: 1.5em;
             }
 
-            .article-1 h1{
-                background-color: #5900b3;
+            article header > h1{
+                text-align: center;
             }
-            .article-1{
-                margin-top: 4px;
+            article header > h1 > span{
+                font-weight: normal;
+            }
+
+            .article-1 > header{
+                background-color: #5900B3;
+            }
+            .article-1 h1{
+                padding: 8px 8px 8px 10px;
+                margin-top: 0;
             }
 
             .article-1 img.article-1-img-1 {
@@ -244,33 +252,58 @@
                 font-weight: bold;
             }
 
-            .article-2{
+            .article-2 > header{
+                background-color: #1a1aff;
             }
 
-            .article-2 h1{
-                background-color: #5900b3;
+            .article-2 p {
+                text-align: center;
+            }
+            .article-2 span.plea {
+                color: red;
+                font-family: 'Gochi Hand', cursive;
+                font-weight: normal;
+                font-size: 4.0em;
+            }
+            
+            a#petfinder {
+                font-size: 1.1em;
+                font-weight: bold;
+                color: blue;
             }
 
-            .article-2 .img-grid-container {
+            .article-3 > header {
+                background-color: #CC0066;
             }
 
-            .article-2 .img-grid-container figure{
+            .article-4 > header {
+                background-color: #990000;
+            }
+
+            .article-5 > header {
+                background-color: #7733FF;
+            }
+
+            figcaption span.name {
+                text-transform: uppercase;
+            }
+
+            .img-grid-container figure{
                 display:inline-block;
                 max-width: 120px;
                 min-height: 120px;
                 margin: 0 5px 0 5px;
                 vertical-align: top;
             }
-            .article-2 .img-grid-container figure img{
+            .img-grid-container figure img{
                 width: 100%;
                 height: 100%;
                 border: none;
                 margin: 4px 10px 0 0;
             }
-            .article-2 .img-grid-container figure figcaption{
+            .img-grid-container figure figcaption{
                 font-size: 0.7em;
             }
-
             @media screen and (max-width: 1024px) {
                 .logo {
                     text-align:center;
@@ -284,6 +317,14 @@
                 }
                 .header-pic-1 {
                     text-align:center;
+                }
+            }
+
+            @media screen and (max-width: 850px) {
+                main.article-container{
+                    column-count:1;
+                    -webkit-column-count: 1;
+                    -moz-column-count: 1;
                 }
             }
         </style>
@@ -330,7 +371,10 @@
 
             <main class="article-container">
                 <article class="article-1">
-                    <h1>The Clock is Running Out for the Dogs of Northern Lights</h1>
+                    <header>
+                        <h1>The Clock is Running Out for the Dogs of Northern Lights</h1>
+                    </header>
+
                     <p>
                         <img src="img/article-1-img-1.jpeg" alt="Dog 1" class="article-1-img-1"/>
                         It's been another long year since we've had to reach out to you for help on behalf of our "team", the homeless dogs of Northern Lights Sled Dog Rescue. We've given our best effort to the dogs since long before this tough season began,
@@ -388,103 +432,197 @@
                 </article>
 
                 <article class="article-2">
-                    <h1><em class="bold uppercase">OUR CURRENT ROSTER</em> (Boys in Boarding &amp; Boys in Foster - Waiting for Forever Homes)</h1>
+                    <header>
+                        <h1><em class="bold uppercase">Our Current Roster</em><br/><span>(Boys in Boarding &amp; Boys in Foster - Waiting for Forever Homes)</span></h1>
+                    </header>
+
                     <div class="img-grid-container">
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 1" class="img-grid"/>
+                            <img src="img/stannis.jpeg" alt="Dog 1" class="img-grid"/>
 
                             <figcaption>
-                                Stannis (boarding)
+                                <span class="name">Stannis</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 2" class="img-grid"/>
+                            <img src="img/penguin.jpeg" alt="Dog 2" class="img-grid"/>
 
                             <figcaption>
-                                Penguin (boarding)
+                                <span class="name">Penguin</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 3" class="img-grid"/>
+                            <img src="img/drake.jpeg" alt="Dog 3" class="img-grid"/>
 
                             <figcaption>
-                                Drake (boarding)
+                                <span class="name">Drake</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 4" class="img-grid"/>
+                            <img src="img/bentley.jpeg" alt="Dog 4" class="img-grid"/>
 
                             <figcaption>
-                                Bentley (boarding)
+                                <span class="name">Bentley</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 5" class="img-grid"/>
+                            <img src="img/rufus.jpeg" alt="Dog 5" class="img-grid"/>
 
                             <figcaption>
-                                Rufus (boarding)
+                                <span class="name">Rufus</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 6" class="img-grid"/>
+                            <img src="img/luke.jpeg" alt="Dog 6" class="img-grid"/>
 
                             <figcaption>
-                                Luke (boarding)
+                                <span class="name">Luke</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 7" class="img-grid"/>
+                            <img src="img/everest.jpeg" alt="Dog 7" class="img-grid"/>
 
                             <figcaption>
-                                Everest (boarding)
+                                <span class="name">Everest</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 8" class="img-grid"/>
+                            <img src="img/fargo.jpeg" alt="Dog 8" class="img-grid"/>
 
                             <figcaption>
-                                Fargo (boarding)
+                                <span class="name">Fargo</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 9" class="img-grid"/>
+                            <img src="img/hickory.jpeg" alt="Dog 9" class="img-grid"/>
 
                             <figcaption>
-                                Hickory (boarding)
+                                <span class="name">Hickory</span> <span class="note">(boarding)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 10" class="img-grid"/>
+                            <img src="img/kai.jpeg" alt="Dog 10" class="img-grid"/>
 
                             <figcaption>
-                                Kai (foster)
+                                <span class="name">Kai</span> <span class="note">(foster)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 11" class="img-grid"/>
+                            <img src="img/malakai.jpeg" alt="Dog 11" class="img-grid"/>
 
                             <figcaption>
-                                Malakai (foster)
+                                <span class="name">Malakai</span> <span class="note">(foster)</span>
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/article-1-img-2.jpeg" alt="Dog 12" class="img-grid"/>
+                            <img src="img/mashugga.jpeg" alt="Dog 12" class="img-grid"/>
 
                             <figcaption>
-                                Mashugga (foster)
+                                <span class="name">Mashugga</span> <span class="note">(foster)</span>
                             </figcaption>
                         </figure>
                     </div>
 
                     <p>
-                        <span>Please Help Us!</span>
-                        Let them speak to your heart … See all of these terrific dogs and either hear or read how they beat the odds and got their second chance at happiness at <a href="http://northernlights.petfinder.com">northernlights.petfinder.com </a>
+                        <span class="plea">Please Help Us!</span><br/>
+                        <em class="bold">Let them speak to your heart … See all of these terrific dogs and either hear or read how they beat the odds and got their second chance at happiness at
+                        <br/>
+                        </em> <a id="petfinder" href="http://northernlights.petfinder.com">northernlights.petfinder.com </a>
                     </p>
                 </article>
 
-                <article></article>
+                <article class="article-3">
+                    <header>
+                        <h1><em class="bold uppercase">Senior Cheerleaders</em><br/><span>(Senior Girls in Need of Forever or Foster Homes)</span></h1>
+                    </header>
+                    <div class="img-grid-container">
+                        <figure>
+                            <img src="img/mia.jpeg" alt="Dog 1" class="img-grid"/>
 
-                <article></article>
+                            <figcaption>
+                                <span class="name">Mia</span> <span class="note">(in foster)</span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/willow.jpeg" alt="Dog 2" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Willow</span> <span class="note">(in foster)</span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/savannah.jpeg" alt="Dog 3" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Savannah</span> <span class="note">(in NEED of foster)</span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/maya.jpeg" alt="Dog 4" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Maya</span> <span class="note">(in NEED of foster)</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="article-4">
+                    <header>
+                        <h1><em class="bold uppercase">Junior Cheerleaders</em><br/><span>(Girls in Boarding - With Your Help We Can Say "Yes" to More and Add to the Squad!)</span></h1>
+                    </header>
+                    <div class="img-grid-container">
+                        <figure>
+                            <img src="img/dixie.jpeg" alt="Dog 1" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Dixie</span> <span class="note"></span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/staasi.jpeg" alt="Dog 2" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Staasi</span> <span class="note"></span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/jadis.jpeg" alt="Dog 3" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Jadis</span> <span class="note"></span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/natasha.jpeg" alt="Dog 2" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Natasha</span> <span class="note"></span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/leia.jpeg" alt="Dog 4" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Leia</span> <span class="note"></span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/sophie_kim.jpeg" alt="Dog 3" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Sophie Kim</span> <span class="note"></span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/ember.jpeg" alt="Dog 4" class="img-grid"/>
+
+                            <figcaption>
+                                <span class="name">Ember</span> <span class="note"></span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </article>
 
                 <article></article>
 
